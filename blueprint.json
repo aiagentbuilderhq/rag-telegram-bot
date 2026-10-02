@@ -1,0 +1,11 @@
+{
+  "name": "RAG-lite Telegram Q&A Bot \u2014 Notion/Sheets Knowledge Base + MCP + LangChain",
+  "description": "Telegram Bot Question \u2192 Notion/Sheets Search Rows (RAG-lite Retrieve) \u2192 Gemini Generate Answer with Confidence (MCP + LangChain) \u2192 Router: Confidence Gate \u2192 Telegram Reply or Slack Escalation",
+  "modules": [
+    "Telegram: Watch Updates (Telegram Bot API)",
+    "Sheets: Search Rows OR Notion: Query Database (Sheets API / Notion API \u2014 RAG-lite Retrieve)",
+    "Gemini: Generate Answer with Confidence (Gemini API + Groq Fallback + MCP + LangChain)",
+    "Router: Confidence \u226580% \u2192 Telegram Reply, <80% \u2192 Slack Escalation"
+  ],
+  "note": "Knowledge base: 20 Q&As in Sheets/Notion. Prompt: Knowledge: {{Retrieved Q&As}} User Q: {{User Question}} If in KB, answer with confidence 80-100%, if not ESCALATE 0-50%. Output: ANSWER: [text] | CONFIDENCE: [%] | SOURCE: [Q&A]"
+}

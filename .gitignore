@@ -1,0 +1,19 @@
+# Security - Never commit secrets
+.env
+.env.local
+*.key
+*token*.txt
+*secret*.json
+config.json
+credentials.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
